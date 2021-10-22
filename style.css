@@ -1,0 +1,478 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face{
+  font-family: Letters for Learners;
+  src: url(../Principal/Letters\ for\ Learners.ttf);
+  }
+
+body{
+    background: #440258;
+    font-family:'Letters for Learners';
+    font-size: 16px;
+}
+/*----------------------------------------------Loader----------------------------------------------*/
+.hidden{
+   overflow: hidden;
+}
+
+.centrado{
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------Header------------------------------------------------------------*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #3ca5a0;
+    /* fallback for old browsers */
+    background:  url(https://www.muycomputer.com/wp-content/uploads/2018/11/memoria-RAM-5-560x600.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background:  url(https://www.muycomputer.com/wp-content/uploads/2018/11/memoria-RAM-5-560x600.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .menu{
+  background-color: #15fa61a2;
+    margin:20px 0;
+    display:flex;
+    justify-content: center;
+
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+header .menu a{
+    font-size:18px;
+    font-family: 'lato';
+    font-weight: 300;
+    display: inline-block;
+    padding:10px 0;
+    margin:0 15px;
+    color:rgb(10, 0, 99);
+    text-decoration: none;
+}
+header .contenido-header{
+    margin: 90px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+header .contenido-header .titulo-header{
+    font-size: 140px;
+    text-align: center;
+    color: rgb(150, 90, 12);
+    text-align: center;
+}
+
+header .contenido-header .linea-header{
+    width: 850px;
+    margin: auto;
+    height:3px;
+    background: #15a4fa;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header{
+    color:#fff;
+    font-weight: 300;
+    margin-bottom:30px;
+    font-size:35px;
+    text-align: center;
+}
+
+header .contenido-header .action-header{
+    display: inline-block;
+    margin: auto;
+    color: #fff;   
+    text-decoration: none;
+    border:1px solid #15a4fa;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header .contenido-header .action-header:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------Sub titulo---------------------------------------------------------*/
+main .quienes{
+    background: linear-gradient(#440258, rgb(36, 61, 204), #440258);  
+    padding:60px 0;
+}
+#mitad{
+  width: 30%;
+}
+
+main .quienes .quienes-titulo{
+    color:#000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+main .quienes .quienes-parrafo{
+  text-align:justify;
+  font-size: x-large;
+  align-items: center;
+  display: flex;
+  height: 100px;
+
+  text-justify: center;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------Seccion de los iconos-----------------------------------------------*/
+main .quehacemos{
+    margin:60px 0;  
+
+
+}
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .quehacemos .contenido-cajas .tarjeta{
+    width: 30%;
+    text-align: center;
+}
+
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta{
+    margin: 25px 0;   
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------Collage-------------------------------------------------------------*/
+main .portafolio{
+  background: linear-gradient(#440258, rgb(36, 61, 204), #440258);  
+  padding: 60px 0;
+}
+
+main .portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color:#0ba505;
+    font-size: 50px;
+}
+
+main .portafolio .portafolio-textos p{
+    color: #909090;
+    font-size: 30px;
+    margin:20px 0 0 0;
+}
+
+main .portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .portafolio .galeria .fotos{
+    width: 30%;
+    margin-bottom:20px;
+}
+
+main .portafolio .galeria .fotos .texto{
+    text-align: center;
+    margin-bottom: 30px;
+    color:#000000;
+    font-size: 20px;
+}
+
+main .portafolio .galeria .fotos img{
+    width: 100%;
+    height:210px;
+    border-radius: 5px;
+}
+main .portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+
+
+.contenedor {
+  width: 95%;
+  max-width:1000px;
+  margin:auto;
+}
+
+  .contenedor p {
+    margin-bottom:40px;
+  }
+
+
+
+
+.menu-fixed {
+  position:fixed;
+  z-index:1000;
+  top:0;
+  max-width:1000px;
+  /*left:0;*/
+  /*Podemos hacer que el menu abarque el 100% al hacer scroll*/
+  width:50%;
+} 
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------Pie de pagina-------------------------------------------------------------*/
+footer .contacto{
+    height:600px;
+    background-image: url(../img/footer.png);
+    background-position:center;
+    padding:60px 0;
+}
+
+footer .footer-textos{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+}
+
+footer .footer-textos p{
+    font-size: 14px;
+    margin:15px 0 30px 0;
+    color: #999999;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    
+}
+footer .contacto  input[type="text"], footer .contacto  input[type="email"],
+footer .contacto  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto  textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+   display: flex;
+   justify-content: flex-end;
+}
+footer .contacto  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #15a4fa;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+
+}
+footer .contacto  input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer{
+    height:200px;
+    background: #000;
+}
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+       font-size:18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+       width: 48%;
+    }
+    main .contenido-cajas{
+        justify-content: center
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin:20px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
+
+
+.contenedor-footer{
+display: flex;
+width: 90%;
+justify-content: space-evenly;
+margin: auto;
+padding-bottom: 50px;
+border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+text-align: center;
+}
+
+.content-foo h4{
+color: #fff;
+font-size: 100%;
+font-family: 'Arial';
+border-bottom: 3px solid #20d3c4;
+padding-bottom: 10px;
+margin-bottom: 15px;
+}
+
+.content-foo p{
+color: #ccc;
+}
+
+.titulo-final{
+text-align: center;
+font-size: 24px;
+margin: 20px 0 0 0;
+color: #9e9797;
+}
